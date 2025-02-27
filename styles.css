@@ -104,18 +104,3 @@ a:hover {
 .project ul li {
     list-style-type: disc;
 }
-
-.contact-item {
-    display: flex;
-    margin: 8px 0;
-}
-
-.contact-item .label {
-    width: 120px;
-    font-weight: bold;
-    color: #555;
-}
-
-.contact-item span {
-    flex: 1;
-}
