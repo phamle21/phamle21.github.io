@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Le - PHP Developer CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #0077B5;
+            margin: 0 0 10px 0;
+        }
+
+        .contact-info,
+        .links {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .contact-info span,
+        .links span {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .job-section {
+            margin-top: 20px;
+            border-left: 4px solid #0077B5;
+            padding-left: 15px;
+        }
+
+        .job-section h2 {
+            font-size: 20px;
+            color: #0077B5;
+            margin: 0 0 10px 0;
+        }
+
+        .job-title {
+            font-size: 16px;
+            color: #2c3e50;
+            margin: 5px 0;
+        }
+
+        .job-dates {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .job-company {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .job-description ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            color: #666;
+        }
+
+        .summary {
+            background-color: #e6f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .print-btn {
+            background-color: #0077B5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .print-btn:hover {
+            background-color: #005b8f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pham Le</h1>
+            <div class="contact-info">
+                <span>📞 +84941649826</span>
+                <span>✉️ phamle21@gmail.com</span>
+                <span>🏠 Quận 12, TP. HCM</span>
+            </div>
+            <div class="links">
+                <span>🌐 https://www.linkedin.com/in/phamle21</span>
+            </div>
+        </div>
+
+        <div class="summary">
+            <p>I am a highly adaptable and resilient individual who thrives under pressure. With a problem-solving
+                mindset, I can quickly analyze situations and propose effective solutions. My strong communication
+                skills and friendly personality enable me to work well both independently and as part of a team. I am
+                always eager to learn, improve, and contribute to the success of my work environment.</p>
+        </div>
+
+        <div class="job-section">
+            <div class="job-dates">02/2022 - Present</div>
+            <div class="job-title">Full Stack PHP Developer</div>
+            <div class="job-company">Silicon Stack</div>
+            <div class="job-description">
+                <ul>
+                    <li>Developed and maintained WordPress-based websites for various purposes, including e-learning
+                        platforms, multisite e-commerce systems for BMW/MINI, and other custom projects.</li>
+                    <li>Maintained and enhanced a WordPress-based football club management system, incorporating key
+                        features such as player suspension tracking and club expense payment processing.</li>
+                    <li>Maintained and developed an iframe-based CV submission system using Laravel.</li>
+                    <li>Led the UI development and middleware integration for an e-commerce project on BigCommerce,
+                        enabling seamless connections between BigCommerce, bLoyal, and HubSpot using Node.js.</li>
+                    <li>Actively contributed to the FTeam, a core company team responsible for organizing key events
+                        such as Happy Hours, Team Building activities, and company celebrations.</li>
+                    <li>Took on the role of office administrator at a company branch in Can Tho, managing daily
+                        operations and office coordination.</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="print-btn" onclick="printCV()">Print as PDF</button>
+    </div>
+
+    <script>
+        function printCV() {
+            window.print(); // Print the current page as PDF
+        }
+
+        // Smooth scroll effect (optional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
